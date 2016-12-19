@@ -202,7 +202,7 @@ resources:
       #   - "#mybuilds"
 
 
-  - name: docker-opts
+  - name: docker-opts-1
     type: dockerOptions
     version:
       labels: "Rituraj: 321"
