@@ -1,5 +1,5 @@
 vars:
-  master1: 
+  master: 
     sourceName1: library/nginx
     sourceName2: library/nginx
  
