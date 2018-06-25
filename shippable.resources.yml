@@ -9,7 +9,6 @@ vars:
   
   region: us-west-2   
   sourceName1: library/nginx
-  sourceName2: library/redis
   integration: ship_int
 
 resources:
