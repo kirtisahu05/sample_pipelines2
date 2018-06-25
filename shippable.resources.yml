@@ -1,9 +1,15 @@
+vars:
+  region: us-west-2   
+  sourceName1: library/nginx
+  sourceName2: library/redis
+  integration: ship_int
+
 resources:
   - name: box-nginx-1-2-master
     type: image
     integration: dockerhub
     pointer:
-      sourceName: "library/nginx"
+      sourceName: ${sourceName1}
       isPull: false
     seed:
       versionName: latest
@@ -12,7 +18,7 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: "library/nginx"
+      sourceName: ${sourceName2}
       isPull: false
     seed:
       versionName: latest
