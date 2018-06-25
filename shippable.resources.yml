@@ -28,4 +28,4 @@ resources:
       sourceName: ${sourceName2}
       isPull: false
     seed:
-      versionName: latest
+      versionName: master
