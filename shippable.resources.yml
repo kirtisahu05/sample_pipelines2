@@ -1,4 +1,12 @@
 vars:
+  master: 
+    sourceName1: library/nginx
+    sourceName2: library/nginx
+ 
+  rc: 
+    sourceName1: library/redis
+    sourceName2: library/redis
+  
   region: us-west-2   
   sourceName1: library/nginx
   sourceName2: library/redis
