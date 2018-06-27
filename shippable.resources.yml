@@ -12,7 +12,7 @@ vars:
   integration: ship_int
 
 resources:
-  - name: box-nginx-1-2-master
+  - name: box-nginx-1
     type: image
     integration: dockerhub
     pointer:
@@ -21,7 +21,7 @@ resources:
     seed:
       versionName: latest
      
-  - name: box-nginx-2-2-master
+  - name: box-nginx-2
     type: image
     integration: dockerhub
     pointer:
