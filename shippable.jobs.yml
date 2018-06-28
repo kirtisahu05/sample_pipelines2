@@ -20,6 +20,8 @@ jobs:
       - IN: box-nginx-2
         branch: ${branch}
       - IN: sample_nodejs_runCI
+    on_success:
+      - NOTIFY: slack_notification
         
  
   - name: sample_nodejs_runCI
