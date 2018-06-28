@@ -1,9 +1,24 @@
+vars:
+  master: 
+    sourceName1: library/nginx
+    sourceName2: library/nginx
+    branch: master
+ 
+  rc: 
+    sourceName1: library/redis
+    sourceName2: library/redis
+    branch: rc
+  
+  region: us-west-2   
+  sourceName1: library/nginx
+  integration: ship_int
+
 jobs:
   - name: rituraj-1-1
     type: manifest
     steps:
       - IN: box-nginx-2
-        branch: master
+        branch: ${branch}
       - IN: sample_nodejs_runCI
         
  
