@@ -29,3 +29,10 @@ resources:
       isPull: false
     seed:
       versionName: master
+ 
+  - name: slack_notification
+    type: notification
+    integration: slack
+    versionTemplate:
+      recipients:
+        - "#mybuilds"
