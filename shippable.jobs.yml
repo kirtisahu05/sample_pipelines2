@@ -21,7 +21,7 @@ jobs:
         branch: ${branch}
       - IN: sample_nodejs_runCI
     on_success:
-      - NOTIFY: slack_notification
+      - NOTIFY: slack_notification_master
         
  
   - name: sample_nodejs_runCI
