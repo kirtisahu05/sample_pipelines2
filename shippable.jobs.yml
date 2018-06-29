@@ -1,32 +1,14 @@
-vars:
-  master: 
-    sourceName1: library/nginx
-    sourceName2: library/nginx
-    branch: master
- 
-  rc: 
-    sourceName1: library/redis
-    sourceName2: library/redis
-    branch: rc
-  
-  region: us-west-2   
-  sourceName1: library/nginx
-  integration: ship_int
-
 jobs:
-  - name: RITURAJ-1-1_MASTER1
+  - name: dv-man
     type: manifest
     steps:
-      - IN: box-nginx-2
-        branch: ${branch}
-      - IN: sample_nodejs_runCI
-    on_success:
-      NOTIFY: slack_notification
-      branch: master
-        
- 
-  - name: sample_nodejs_runCI
-    type: runCI
+      - IN: dv-image
+        pull: false
+
+  - name: infra-provision-long-long-very-long-name-to-test
+    type: runSh
     steps:
-      - IN: rituraj-1-1
-        branch: master
+      - IN: dv-man
+      - TASK:
+        - script: echo "here"
+        
