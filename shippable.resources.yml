@@ -1,38 +1,12 @@
-vars:
-  master: 
-    sourceName1: library/nginx
-    sourceName2: library/nginx
- 
-  rc: 
-    sourceName1: library/redis
-    sourceName2: library/redis
-  
-  region: us-west-2   
-  sourceName1: library/nginx
-  integration: ship_int
-
 resources:
-  - name: box-nginx-1
+  - name: dv-image
     type: image
     integration: dockerhub
     pointer:
-      sourceName: ${sourceName1}
-      isPull: false
+      sourceName: "library/nginx"
     seed:
       versionName: latest
-     
-  - name: box-nginx-2
-    type: image
+
+  - name: dockerIntegration
+    type: integration
     integration: dockerhub
-    pointer:
-      sourceName: ${sourceName2}
-      isPull: false
-    seed:
-      versionName: master
- 
-  - name: slack_notification
-    type: notification
-    integration: slack
-    versionTemplate:
-      recipients:
-        - "#mybuilds"
