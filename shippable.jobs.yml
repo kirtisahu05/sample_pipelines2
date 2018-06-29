@@ -5,7 +5,7 @@ jobs:
       - IN: dv-image
         pull: false
 
-  - name: RITURAJ-1-1_MASTER1
+  - name: RITURAJ-1-1_MASTER11
     type: runSh
     steps:
       - IN: dv-man
