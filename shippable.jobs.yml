@@ -9,6 +9,7 @@ jobs:
     type: runSh
     steps:
       - IN: dv-man
+      - IN: dv-image
       - TASK:
         - script: echo "here"
         
