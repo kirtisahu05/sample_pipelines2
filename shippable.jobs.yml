@@ -10,6 +10,8 @@ jobs:
     steps:
       - IN: dv-man
       - IN: dv-image
+      - IN: dv-image-new
+      - IN: dv-image-new2
       - TASK:
         - script: echo "here"
         
