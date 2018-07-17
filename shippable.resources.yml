@@ -10,3 +10,19 @@ resources:
   - name: dockerIntegration
     type: integration
     integration: dockerhub
+      
+  - name: dv-image-new
+    type: image
+    integration: dockerhub
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
+
+  - name: dv-image-new2
+    type: image
+    integration: dockerhub
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
