@@ -5,7 +5,7 @@ jobs:
       - IN: dv-image
         pull: false
 
-  - name: RITURAJ-1-1_MASTER1.need-to-test-seriously-we-need-to-test-at-any-cost-for_then_to_work_seperator_for_then_to_work_seperator_for_then_to_work
+  - name: RITURAJ-1-1_MASTER1_need-to-test-seriously-we-need-to-test-at-any-cost-for_then_to_work_seperator_for_then_to_work_seperator_for_then_to_work
     type: runSh
     steps:
       - IN: dv-man
