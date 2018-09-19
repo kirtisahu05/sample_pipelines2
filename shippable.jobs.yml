@@ -23,6 +23,26 @@ jobs:
     on_success:
       NOTIFY: slack_notification
       branch: master
+      
+   - name: RITURAJ-1-1_MASTER1
+    type: manifest
+    steps:
+      - IN: box-nginx-2
+        branch: ${branch}
+      - IN: sample_nodejs_runCI
+    on_success:
+      NOTIFY: slack_notification
+      branch: master 
+      
+  - name: RITURAJ-1-1_MASTER1
+    type: manifest
+    steps:
+      - IN: box-nginx-2
+        branch: ${branch}
+      - IN: sample_nodejs_runCI
+    on_success:
+      NOTIFY: slack_notification
+      branch: master
         
  
   - name: sample_nodejs_runCI_make_it_extremly_lager-to-test-and-verify-all-seperators
